@@ -16,16 +16,19 @@
     <script>scripts\scr_inventory_add_item.gml</script>
     <script>scripts\scr_inventory_delete_item.gml</script>
   </scripts>
-  <shaders name="shaders"/>
+  <fonts name="fonts">
+    <font>fonts\currency</font>
+  </fonts>
   <objects name="objects">
+    <object>objects\obj_store</object>
     <object>objects\obj_inventory</object>
     <object>objects\obj_inventory_item</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41914.07258625</constant>
+    <constant name="GM_build_date">41919.0071519907</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

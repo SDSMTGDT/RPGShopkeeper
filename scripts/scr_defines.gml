@@ -13,7 +13,5 @@ enum itemType {
 // Enum for types of item attributes
 enum attributeType {
     DAMAGE,
-    QUALITY,
-    POWER
-}
-
+    QUALITY
+};
