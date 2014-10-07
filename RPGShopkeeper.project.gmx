@@ -13,8 +13,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_defines.gml</script>
-    <script>scripts\scr_inventory_add_item.gml</script>
-    <script>scripts\scr_inventory_delete_item.gml</script>
+    <script>scripts\scr_inventory_add_special_item.gml</script>
+    <script>scripts\scr_inventory_add_basic_item.gml</script>
+    <script>scripts\scr_inventory_remove_special_item.gml</script>
+    <script>scripts\scr_inventory_remove_basic_item.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\currency</font>
@@ -28,7 +30,7 @@
     <room>rooms\rm_test</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41919.0071519907</constant>
+    <constant name="GM_build_date">41919.0367859722</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

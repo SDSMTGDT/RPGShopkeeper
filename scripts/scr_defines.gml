@@ -10,8 +10,3 @@ enum itemType {
     MISCELLANEOUS
 };
 
-// Enum for types of item attributes
-enum attributeType {
-    DAMAGE,
-    QUALITY
-};

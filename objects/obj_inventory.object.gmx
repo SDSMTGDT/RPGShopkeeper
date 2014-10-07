@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>self.inv_list = ds_list_create();
+            <string>/*
+ * List stores unique and special items.
+ * Map stores basic items in enum:number pairs.
+ */
+
+self.inv_special = ds_list_create();
+self.inv_basic = ds_map_create();
 
 </string>
           </argument>
@@ -49,7 +55,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ds_list_destroy(self.inv_list);
+            <string>/**
+ * Free up data structures
+ */
+
+ds_map_destroy(self.inv_basic);
+ds_list_destroy(self.inv_special);
 
 </string>
           </argument>

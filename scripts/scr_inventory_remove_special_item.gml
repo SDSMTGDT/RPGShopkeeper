@@ -11,13 +11,14 @@ var inv = argument0;
 var item = argument1;
 
 // Verify argument types
-if (object_get_name(inv) == "obj_inventory") inv = inv.inventory;
-if (!is_real(inv) || ds_exists(inv, ds_type_list)) exit;
-if (object_get_name(inv) != "obj_inventory_item") exit;
+if (object_get_name(inv) == "obj_inventory")
+    inv = inv.inventory;
+if (!is_real(inv) || ds_exists(inv, ds_type_list))
+    exit;
 
 // Make sure item is already in inventory and get position
-var pos = ds_list_find_index(inv, item);
-if (pos == -1) exit;
+if (ds_list_find_index(inv, item) == -1)
+    exit;
 
 // Remove the item from the data structure
 ds_list_delete(inv, pos);
