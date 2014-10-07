@@ -11,12 +11,27 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_defines.gml</script>
+    <script>scripts\scr_inventory_add_special_item.gml</script>
+    <script>scripts\scr_inventory_add_basic_item.gml</script>
+    <script>scripts\scr_inventory_remove_special_item.gml</script>
+    <script>scripts\scr_inventory_remove_basic_item.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\currency</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\actor</object>
+    <object>objects\obj_store</object>
+    <object>objects\obj_inventory</object>
+    <object>objects\obj_inventory_item</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_test</room>
+  </rooms>
   <constants number="2">
-    <constant name="GM_build_date">0</constant>
-    <constant name="GM_version">0</constant>
+    <constant name="GM_build_date">41919.0367859722</constant>
+    <constant name="GM_version">'100'</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>
